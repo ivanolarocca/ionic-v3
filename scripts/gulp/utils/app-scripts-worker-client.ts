@@ -100,7 +100,7 @@ export function createWorker(msg: MessageToWorker): any {
       scriptArgs.push('--optimizeJs');
     }
 
-    const workerModule = join(process.cwd(), 'node_modules', '@ionic', 'app-scripts', 'bin', 'ionic-app-scripts.js');
+    const workerModule = join(process.cwd(), 'node_modules', 'app-scripts-with-sass', 'bin', 'ionic-app-scripts.js');
     const worker = fork(workerModule, scriptArgs, {
       env: {
         FORCE_COLOR: true,

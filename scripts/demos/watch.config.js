@@ -1,6 +1,6 @@
 var path = require('path');
 
-var watch = require(path.join('..', '..', 'node_modules', '@ionic', 'app-scripts', 'dist', 'watch'));
+var watch = require(path.join('..', '..', 'node_modules', 'app-scripts-with-sass', 'dist', 'watch'));
 
 var entryPointDirectory = path.dirname(process.env.IONIC_APP_ENTRY_POINT)
 
