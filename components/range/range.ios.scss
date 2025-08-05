@@ -217,7 +217,7 @@ $range-ios-pin-padding-start:                 $range-ios-pin-padding-end !defaul
 
 @each $color-name, $color-base, $color-contrast in get-colors($colors-ios) {
 
-  .range-ios-#{$color-name} {
+  .range-ios-#{"" + $color-name} {
     .range-bar-active,
     .range-tick-active {
       background: $color-base;

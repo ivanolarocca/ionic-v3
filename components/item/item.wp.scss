@@ -249,12 +249,12 @@ $item-wp-sliding-content-background: $list-wp-background-color !default;
 @each $color-name, $color-base, $color-contrast in get-colors($colors-wp) {
   // If there is text with a color it should use this color
   // and override whatever item sets it to
-  .item-wp .text-wp-#{$color-name} {
+  .item-wp .text-wp-#{"" + $color-name} {
     color: $color-base;
   }
 
-  .item-wp-#{$color-name},
-  .item-divider-wp-#{$color-name} {
+  .item-wp-#{"" + $color-name},
+  .item-divider-wp-#{"" + $color-name} {
     color: $color-contrast;
     background-color: $color-base;
 

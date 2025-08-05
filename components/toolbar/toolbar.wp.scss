@@ -100,22 +100,22 @@ $toolbar-button-wp-strong-font-weight:   bold !default;
 
 @mixin wp-toolbar-theme($color-name, $color-base, $color-contrast) {
 
-  .toolbar-wp-#{$color-name} .toolbar-background-wp {
+  .toolbar-wp-#{"" + $color-name} .toolbar-background-wp {
     background: $color-base;
   }
 
-  .toolbar-wp-#{$color-name} .bar-button-clear-wp,
-  .toolbar-wp-#{$color-name} .bar-button-default-wp,
-  .toolbar-wp-#{$color-name} .bar-button-outline-wp,
-  .toolbar-wp-#{$color-name} .toolbar-title-wp {
+  .toolbar-wp-#{"" + $color-name} .bar-button-clear-wp,
+  .toolbar-wp-#{"" + $color-name} .bar-button-default-wp,
+  .toolbar-wp-#{"" + $color-name} .bar-button-outline-wp,
+  .toolbar-wp-#{"" + $color-name} .toolbar-title-wp {
     color: $color-contrast;
   }
 
-  .toolbar-wp-#{$color-name} .bar-button-outline-wp {
+  .toolbar-wp-#{"" + $color-name} .bar-button-outline-wp {
     border-color: $color-contrast;
   }
 
-  .toolbar-wp-#{$color-name} {
+  .toolbar-wp-#{"" + $color-name} {
     @each $color-name, $color-base, $color-contrast in get-colors($colors-wp) {
       @include wp-bar-button-default($color-name, $color-base, $color-contrast);
       @include wp-bar-button-outline($color-name, $color-base, $color-contrast);
@@ -179,9 +179,9 @@ $toolbar-button-wp-strong-font-weight:   bold !default;
 
 @mixin wp-bar-button-default($color-name, $color-base, $color-contrast) {
 
-  .bar-button-#{$color-name}-wp,
-  .bar-button-clear-wp-#{$color-name},
-  .bar-button-wp-#{$color-name} {
+  .bar-button-#{"" + $color-name}-wp,
+  .bar-button-clear-wp-#{"" + $color-name},
+  .bar-button-wp-#{"" + $color-name} {
     color: $color-base;
     background-color: transparent;
 
@@ -215,7 +215,7 @@ $toolbar-button-wp-strong-font-weight:   bold !default;
 
 @mixin wp-bar-button-outline($color-name, $color-base, $color-contrast) {
 
-  .bar-button-outline-wp-#{$color-name} {
+  .bar-button-outline-wp-#{"" + $color-name} {
     $fg-color: color-shade($color-base);
     border-color: $fg-color;
     color: $fg-color;
@@ -249,7 +249,7 @@ $toolbar-button-wp-strong-font-weight:   bold !default;
 
 @mixin wp-bar-button-solid($color-name, $color-base, $color-contrast) {
 
-  .bar-button-solid-wp-#{$color-name} {
+  .bar-button-solid-wp-#{"" + $color-name} {
     color: $color-contrast;
     background-color: $color-base;
 

@@ -181,7 +181,7 @@ $list-md-header-color:           #757575 !default;
 // --------------------------------------------------
 
 @each $color-name, $color-base, $color-contrast in get-colors($colors-md) {
-  .list-header-md-#{$color-name} {
+  .list-header-md-#{"" + $color-name} {
     color: $color-contrast;
     background-color: $color-base;
   }

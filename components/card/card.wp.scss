@@ -240,11 +240,11 @@ $card-wp-header-color:                #222 !default;
 
 @each $color-name, $color-base, $color-contrast in get-colors($colors-wp) {
 
-  .card-wp .text-wp-#{$color-name} {
+  .card-wp .text-wp-#{"" + $color-name} {
     color: $color-base;
   }
 
-  .card-wp-#{$color-name} {
+  .card-wp-#{"" + $color-name} {
     color: $color-contrast;
     background-color: $color-base;
 
@@ -262,18 +262,18 @@ $card-wp-header-color:                #222 !default;
     }
 
     @each $color-name, $color-base, $color-contrast in get-colors($colors-wp) {
-      .text-wp-#{$color-name},
-      .card-header-wp-#{$color-name},
-      .card-title-wp-#{$color-name},
-      .card-content-wp-#{$color-name} {
+      .text-wp-#{"" + $color-name},
+      .card-header-wp-#{"" + $color-name},
+      .card-title-wp-#{"" + $color-name},
+      .card-content-wp-#{"" + $color-name} {
         color: $color-base;
       }
     }
   }
 
-  .card-header-wp-#{$color-name},
-  .card-title-wp-#{$color-name},
-  .card-content-wp-#{$color-name} {
+  .card-header-wp-#{"" + $color-name},
+  .card-title-wp-#{"" + $color-name},
+  .card-content-wp-#{"" + $color-name} {
     color: $color-base;
   }
 

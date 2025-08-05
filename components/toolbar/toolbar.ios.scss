@@ -122,7 +122,7 @@ $toolbar-button-ios-strong-font-weight:     600 !default;
 }
 
 @mixin ios-toolbar-theme($color-name, $color-base, $color-contrast) {
-  .toolbar-ios-#{$color-name} {
+  .toolbar-ios-#{"" + $color-name} {
 
     .toolbar-background-ios {
       background: $color-base;
@@ -184,9 +184,9 @@ $toolbar-button-ios-strong-font-weight:     600 !default;
 
 @mixin ios-bar-button-default($color-name, $color-base, $color-contrast) {
 
-  .bar-button-#{$color-name}-ios,
-  .bar-button-default.bar-button-ios-#{$color-name},
-  .bar-button-clear-ios-#{$color-name} {
+  .bar-button-#{"" + $color-name}-ios,
+  .bar-button-default.bar-button-ios-#{"" + $color-name},
+  .bar-button-clear-ios-#{"" + $color-name} {
     color: $color-base;
     background-color: transparent;
 
@@ -224,7 +224,7 @@ $toolbar-button-ios-strong-font-weight:     600 !default;
 
 @mixin ios-bar-button-outline($color-name, $color-base, $color-contrast) {
 
-  .bar-button-outline-ios-#{$color-name} {
+  .bar-button-outline-ios-#{"" + $color-name} {
     $fg-color: $color-base;
     border-color: $fg-color;
     color: $fg-color;
@@ -260,7 +260,7 @@ $toolbar-button-ios-strong-font-weight:     600 !default;
 
 @mixin ios-bar-button-solid($color-name, $color-base, $color-contrast) {
 
-  .bar-button-solid-ios-#{$color-name} {
+  .bar-button-solid-ios-#{"" + $color-name} {
     color: $color-contrast;
     background-color: $color-base;
 

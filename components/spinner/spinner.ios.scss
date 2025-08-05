@@ -46,7 +46,7 @@ $spinner-ios-dots-color:           #444 !default;
 
 @each $color-name, $color-base, $color-contrast in get-colors($colors-ios) {
 
-  .spinner-ios-#{$color-name} {
+  .spinner-ios-#{"" + $color-name} {
 
     &.spinner-ios line,
     &.spinner-ios-small line,

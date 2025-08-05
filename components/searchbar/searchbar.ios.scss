@@ -206,29 +206,29 @@ $searchbar-ios-toolbar-input-background:  rgba(0, 0, 0, .08) !default;
 @each $color-name, $color-base, $color-contrast in get-colors($colors-ios) {
   $fg-color: rgba($color-contrast, .5);
 
-  .searchbar-ios-#{$color-name} .searchbar-ios-cancel {
+  .searchbar-ios-#{"" + $color-name} .searchbar-ios-cancel {
     color: $color-base;
   }
 
-  .searchbar-ios-#{$color-name} .searchbar-ios-cancel:hover:not(.disable-hover) {
+  .searchbar-ios-#{"" + $color-name} .searchbar-ios-cancel:hover:not(.disable-hover) {
     color: color-shade($color-base);
   }
 
-  .toolbar-ios-#{$color-name} .searchbar-ios .searchbar-search-icon {
+  .toolbar-ios-#{"" + $color-name} .searchbar-ios .searchbar-search-icon {
     @include ios-searchbar-icon($searchbar-ios-input-search-icon-svg, $fg-color);
   }
 
-  .toolbar-ios-#{$color-name} .searchbar-ios .searchbar-input {
+  .toolbar-ios-#{"" + $color-name} .searchbar-ios .searchbar-input {
     @include placeholder($fg-color);
     color: $color-contrast;
     background: rgba($color-contrast, .08);
   }
 
-  .toolbar-ios-#{$color-name} .searchbar-ios .searchbar-clear-icon {
+  .toolbar-ios-#{"" + $color-name} .searchbar-ios .searchbar-clear-icon {
     @include ios-searchbar-icon($searchbar-ios-input-clear-icon-svg, $fg-color);
   }
 
-  .toolbar-ios-#{$color-name} .searchbar-ios .searchbar-ios-cancel {
+  .toolbar-ios-#{"" + $color-name} .searchbar-ios .searchbar-ios-cancel {
     color: color-contrast($colors-ios, $color-base, ios);
   }
 

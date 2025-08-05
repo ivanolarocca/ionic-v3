@@ -251,12 +251,12 @@ ion-item-group .item-md .item-wrapper:last-child .item-inner {
 @each $color-name, $color-base, $color-contrast in get-colors($colors-md) {
   // If there is text with a color it should use this color
   // and override whatever item sets it to
-  .item-md .text-md-#{$color-name} {
+  .item-md .text-md-#{"" + $color-name} {
     color: $color-base;
   }
 
-  .item-md-#{$color-name},
-  .item-divider-md-#{$color-name} {
+  .item-md-#{"" + $color-name},
+  .item-divider-md-#{"" + $color-name} {
     color: $color-contrast;
     background-color: $color-base;
 

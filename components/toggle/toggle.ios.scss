@@ -238,7 +238,7 @@ $toggle-ios-item-end-padding-start:    $item-ios-padding-start !default;
 
 @mixin ios-toggle-theme($color-name, $color-base) {
 
-  .toggle-ios-#{$color-name}.toggle-checked .toggle-icon {
+  .toggle-ios-#{"" + $color-name}.toggle-checked .toggle-icon {
     background-color: $color-base;
   }
 

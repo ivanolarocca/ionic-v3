@@ -182,12 +182,12 @@ $checkbox-md-item-end-margin-start:      0 !default;
 
 @mixin checkbox-theme-md($color-name, $color-base, $color-contrast) {
 
-  .checkbox-md-#{$color-name} .checkbox-checked {
+  .checkbox-md-#{"" + $color-name} .checkbox-checked {
     border-color: $color-base;
     background-color: $color-base;
   }
 
-  .checkbox-md-#{$color-name} .checkbox-checked .checkbox-inner {
+  .checkbox-md-#{"" + $color-name} .checkbox-checked .checkbox-inner {
     border-color: $color-contrast;
   }
 

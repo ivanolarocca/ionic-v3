@@ -17,7 +17,7 @@ $note-wp-color:      $input-wp-border-color !default;
 
 @each $color-name, $color-base, $color-contrast in get-colors($colors-wp) {
 
-  .note-wp-#{$color-name} {
+  .note-wp-#{"" + $color-name} {
     color: $color-base;
   }
 

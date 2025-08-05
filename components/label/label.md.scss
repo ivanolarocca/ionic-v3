@@ -96,10 +96,10 @@ $label-md-margin-start:               0 !default;
 
 @each $color-name, $color-base, $color-contrast in get-colors($colors-md) {
 
-  .label-md-#{$color-name},
-  .item-input .label-md-#{$color-name},
-  .item-select .label-md-#{$color-name},
-  .item-datetime .label-md-#{$color-name} {
+  .label-md-#{"" + $color-name},
+  .item-input .label-md-#{"" + $color-name},
+  .item-select .label-md-#{"" + $color-name},
+  .item-datetime .label-md-#{"" + $color-name} {
     color: $color-base;
   }
 

@@ -20,7 +20,7 @@
   // If there was a name passed it means the value doesn't exist
   // so error that the value isn't defined
   @if ($color-name) {
-    $error-msg: "The map color `#{$color-name}` is not defined";
+    $error-msg: "The map color `#{"" + $color-name}` is not defined";
     // $error-msg: "
 
     // The map color `#{$color-name}` is not defined.

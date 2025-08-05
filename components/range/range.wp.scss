@@ -210,7 +210,7 @@ $range-wp-pin-padding-start:                 $range-wp-pin-padding-end !default;
 
 @each $color-name, $color-base, $color-contrast in get-colors($colors-wp) {
 
-  .range-wp-#{$color-name} {
+  .range-wp-#{"" + $color-name} {
     .range-bar-active,
     .range-tick-active,
     .range-knob,

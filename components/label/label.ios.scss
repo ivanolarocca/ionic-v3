@@ -102,10 +102,10 @@ $label-ios-margin-start:       0 !default;
 
 @each $color-name, $color-base, $color-contrast in get-colors($colors-ios) {
 
-  .label-ios-#{$color-name},
-  .item-input .label-ios-#{$color-name},
-  .item-select .label-ios-#{$color-name},
-  .item-datetime .label-ios-#{$color-name} {
+  .label-ios-#{"" + $color-name},
+  .item-input .label-ios-#{"" + $color-name},
+  .item-select .label-ios-#{"" + $color-name},
+  .item-datetime .label-ios-#{"" + $color-name} {
     color: $color-base;
   }
 

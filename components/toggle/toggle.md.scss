@@ -232,11 +232,11 @@ $toggle-md-item-end-padding-start:       $item-md-padding-start !default;
 
 @mixin toggle-theme-md($color-name, $color-base) {
 
-  .toggle-md-#{$color-name}.toggle-checked .toggle-icon {
+  .toggle-md-#{"" + $color-name}.toggle-checked .toggle-icon {
     background-color: lighten($color-base, 25%);
   }
 
-  .toggle-md-#{$color-name}.toggle-checked .toggle-inner {
+  .toggle-md-#{"" + $color-name}.toggle-checked .toggle-inner {
     background-color: $color-base;
   }
 

@@ -26,7 +26,7 @@ $badge-wp-text-color:               color-contrast($colors-wp, $badge-wp-backgro
 
 @each $color-name, $color-base, $color-contrast in get-colors($colors-wp) {
 
-  .badge-wp-#{$color-name} {
+  .badge-wp-#{"" + $color-name} {
     color: $color-contrast;
     background-color: $color-base;
   }

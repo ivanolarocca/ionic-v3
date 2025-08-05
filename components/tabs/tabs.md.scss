@@ -312,22 +312,22 @@ $tabs-md-tab-icon-size:                       2.4rem !default;
 
 @mixin tabbar-md($color-name, $color-base, $color-contrast) {
 
-  .tabs-md-#{$color-name} .tabbar {
+  .tabs-md-#{"" + $color-name} .tabbar {
     background-color: $color-base;
   }
 
-  .tabs-md-#{$color-name} .tab-button,
-  .tabs-md-#{$color-name} .tab-button-icon {
+  .tabs-md-#{"" + $color-name} .tab-button,
+  .tabs-md-#{"" + $color-name} .tab-button-icon {
     color: rgba($color-contrast, $tabs-md-tab-opacity);
   }
 
-  .tabs-md-#{$color-name} .tab-button:hover:not(.disable-hover),
-  .tabs-md-#{$color-name} .tab-button[aria-selected=true],
-  .tabs-md-#{$color-name} .tab-button[aria-selected=true] .tab-button-icon {
+  .tabs-md-#{"" + $color-name} .tab-button:hover:not(.disable-hover),
+  .tabs-md-#{"" + $color-name} .tab-button[aria-selected=true],
+  .tabs-md-#{"" + $color-name} .tab-button[aria-selected=true] .tab-button-icon {
     color: $color-contrast;
   }
 
-  .tabs-md-#{$color-name}[tabsHighlight=true] .tab-highlight {
+  .tabs-md-#{"" + $color-name}[tabsHighlight=true] .tab-highlight {
     background: $color-contrast;
   }
 

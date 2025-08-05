@@ -4,7 +4,7 @@
 
 @each $color-name, $color-base, $color-contrast in get-colors($colors-ios) {
 
-  .text-ios-#{$color-name} {
+  .text-ios-#{"" + $color-name} {
     color: $color-base;
   }
 

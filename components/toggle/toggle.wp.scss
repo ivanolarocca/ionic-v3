@@ -212,12 +212,12 @@ $toggle-wp-item-end-padding-start:       $item-wp-padding-start !default;
 
 @mixin toggle-theme-wp($color-name, $color-base, $color-contrast) {
 
-  .toggle-wp-#{$color-name}.toggle-checked .toggle-icon {
+  .toggle-wp-#{"" + $color-name}.toggle-checked .toggle-icon {
     border-color: $color-base;
     background-color: $color-base;
   }
 
-  .toggle-wp-#{$color-name}.toggle-checked .toggle-inner {
+  .toggle-wp-#{"" + $color-name}.toggle-checked .toggle-inner {
     background-color: $color-contrast;
   }
 }

@@ -89,16 +89,16 @@ $fab-button-md-transition-timing-function:     cubic-bezier(.4, 0, .2, 1) !defau
   $bg-color-activated: color-shade($bg-color);
   $fg-color: $color-contrast;
 
-  .fab-md-#{$color-name} {
+  .fab-md-#{"" + $color-name} {
     color: $fg-color;
     background-color: $bg-color;
   }
 
-  .fab-md-#{$color-name}.activated {
+  .fab-md-#{"" + $color-name}.activated {
     background-color: $bg-color-activated;
   }
 
-  .fab-md-#{$color-name} .button-effect {
+  .fab-md-#{"" + $color-name} .button-effect {
     background-color: $fg-color;
   }
 }

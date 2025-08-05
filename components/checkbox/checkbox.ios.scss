@@ -159,12 +159,12 @@ $checkbox-ios-item-end-margin-start:      0 !default;
 
 @mixin checkbox-theme-ios($color-name, $color-base, $color-contrast) {
 
-  .checkbox-ios-#{$color-name} .checkbox-checked {
+  .checkbox-ios-#{"" + $color-name} .checkbox-checked {
     border-color: $color-base;
     background-color: $color-base;
   }
 
-  .checkbox-ios-#{$color-name} .checkbox-checked .checkbox-inner {
+  .checkbox-ios-#{"" + $color-name} .checkbox-checked .checkbox-inner {
     border-color: $color-contrast;
   }
 

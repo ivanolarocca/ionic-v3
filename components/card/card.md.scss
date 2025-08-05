@@ -238,11 +238,11 @@ $card-md-header-color:                #222 !default;
 
 @each $color-name, $color-base, $color-contrast in get-colors($colors-md) {
 
-  .card-md .text-md-#{$color-name} {
+  .card-md .text-md-#{"" + $color-name} {
     color: $color-base;
   }
 
-  .card-md-#{$color-name} {
+  .card-md-#{"" + $color-name} {
     color: $color-contrast;
     background-color: $color-base;
 
@@ -260,18 +260,18 @@ $card-md-header-color:                #222 !default;
     }
 
     @each $color-name, $color-base, $color-contrast in get-colors($colors-md) {
-      .text-md-#{$color-name},
-      .card-header-md-#{$color-name},
-      .card-title-md-#{$color-name},
-      .card-content-md-#{$color-name} {
+      .text-md-#{"" + $color-name},
+      .card-header-md-#{"" + $color-name},
+      .card-title-md-#{"" + $color-name},
+      .card-content-md-#{"" + $color-name} {
         color: $color-base;
       }
     }
   }
 
-  .card-header-md-#{$color-name},
-  .card-title-md-#{$color-name},
-  .card-content-md-#{$color-name} {
+  .card-header-md-#{"" + $color-name},
+  .card-title-md-#{"" + $color-name},
+  .card-content-md-#{"" + $color-name} {
     color: $color-base;
   }
 

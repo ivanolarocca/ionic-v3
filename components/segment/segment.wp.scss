@@ -110,7 +110,7 @@ $segment-button-wp-buttons-justify-content:    flex-start !default;
 
 @mixin wp-segment-button($color-name, $color-base) {
 
-  .segment-wp-#{$color-name} .segment-button {
+  .segment-wp-#{"" + $color-name} .segment-button {
     color: $color-base;
 
     &.activated,
